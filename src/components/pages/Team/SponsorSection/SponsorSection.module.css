@@ -1,0 +1,43 @@
+.sponsor_section {
+  margin: 20px;
+}
+.sponsor_title h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: Marcellus;
+  font-weight: 300;
+  font-size: 40px;
+  color:#FCC907;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0;
+  padding-left: 37px;
+  line-height: 1.5em;
+  margin-top: 15px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.mssg {
+  margin-top: 20px;
+  text-align: left;
+  margin-right: 50px;
+  font-family: Nunito Sans;
+}
+.mssg h2 {
+  color: #FCC907;
+  font-family: Marcellus;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin: 27px 36px;
+  text-align: left;
+}
