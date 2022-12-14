@@ -5,13 +5,13 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
-import EventCard from "./pages/Events/EventCard";
-import WorkshopCard from "./pages/Events/WorkshopCard";
+import EventCard from "../pages/Events/EventCard";
+import WorkshopCard from "../pages/Events/WorkshopCard";
 // import WorkshopCard from './pages/Events/WorkshopCard';
 // import MenuIcon from '@mui/icons-material/Menu';
 // import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 // import Card from '../../src/components/pages/Sponsors/SponsorSection/Card';
-import data from "./pages/Events/Data/data";
+import data from "../pages/Events/Data/data";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
