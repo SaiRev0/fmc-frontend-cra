@@ -1,6 +1,6 @@
-import React from 'react';
-import './events.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./events.css";
+import { Link } from "react-router-dom";
 
 function MobileLayout() {
   return (
@@ -9,56 +9,62 @@ function MobileLayout() {
       <ul>
         <Link to="/events/photography">
           <li>
-            Photography{' '}
+            Photography{" "}
             <span
               className="iconify"
               data-icon="mdi-light:chevron-right"
-              data-inline="false"></span>
+              data-inline="false"
+            ></span>
           </li>
         </Link>
         <Link to="/events/cinematography">
           <li>
-            Cinematography{' '}
+            Cinematography{" "}
             <span
               className="iconify"
               data-icon="mdi-light:chevron-right"
-              data-inline="false"></span>
+              data-inline="false"
+            ></span>
           </li>
         </Link>
         <Link to="/events/outreach">
           <li>
-            Outreach{' '}
+            Outreach{" "}
             <span
               className="iconify"
               data-icon="mdi-light:chevron-right"
-              data-inline="false"></span>
+              data-inline="false"
+            ></span>
           </li>
         </Link>
         <Link to="/events/design">
           <li>
-            Design{' '}
+            Design{" "}
             <span
               className="iconify"
               data-icon="mdi-light:chevron-right"
-              data-inline="false"></span>
+              data-inline="false"
+            ></span>
           </li>
         </Link>
         <Link to="/events/media">
           <li>
-            Media{' '}
+            Media{" "}
             <span
               className="iconify"
               data-icon="mdi-light:chevron-right"
-              data-inline="false"></span>
+              data-inline="false"
+            ></span>
           </li>
         </Link>
         <Link to="/events/animation">
           <li>
-            Animation{' '}
+            Animation{" "}
             <span
               className="iconify"
               data-icon="mdi-light:chevron-right"
-              data-inline="false"></span>
+              data-inline="false"
+            ></span>
           </li>
         </Link>
       </ul>

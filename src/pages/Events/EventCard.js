@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
+// import React, { useState } from "react";
 // import Card from '@mui/material/Card';
 // import CardContent from '@mui/material/CardContent';
 // import CardMedia from '@mui/material/CardMedia';
@@ -10,39 +10,43 @@ import "./events.css";
 import styled from "styled-components";
 // import Tilt from 'react-tilt';
 // import addToCart from './CartModal';
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useCart } from "react-use-cart";
+// import { useCart } from "react-use-cart";
 
 const CardTitle = styled.h2`
   transform: translateZ(55px);
 `;
 
 function EventCard(props) {
-  const {
-    isEmpty,
-    items,
-    totalItems,
-    cartTotal,
-    removeItem,
-    emptyCart,
-    updateItemQuantity,
-  } = useCart();
-  const [click, setClick] = useState(false);
-  const [buttonText, setButtonText] = useState("Next");
-  const { addItem, inCart } = useCart();
-  const { getItem } = useCart();
-  const handleClick = () => {
-    setClick(!click);
-  };
-  function change() {
-    var elem = document.querySelector(".cart-btn");
-    if (elem.value == "Add") {
-      elem.value = "Added";
-    } else {
-      elem.value = "Add";
-    }
-  }
+  // const {
+  //   isEmpty,
+  //   items,
+  //   totalItems,
+  //   cartTotal,
+  //   removeItem,
+  //   emptyCart,
+  //   updateItemQuantity,
+  // } = useCart();
+
+  // const [click, setClick] = useState(false);
+  // const [buttonText, setButtonText] = useState("Next");
+  // const { addItem, inCart } = useCart();
+  // const { getItem } = useCart();
+
+  // const handleClick = () => {
+  //   setClick(!click);
+  // };
+
+  // function change() {
+  //   var elem = document.querySelector(".cart-btn");
+  //   if (elem.value === "Add") {
+  //     elem.value = "Added";
+  //   } else {
+  //     elem.value = "Add";
+  //   }
+  // }
 
   async function addItemToCart(item) {
     // console.log('yash');
@@ -53,7 +57,7 @@ function EventCard(props) {
       cartItem: item,
     };
 
-    const res = await fetch(process.env.REACT_APP_BACKEND_URI + "/api/cart", {
+    await fetch(process.env.REACT_APP_BACKEND_URI + "/api/cart", {
       method: "POST",
       body: JSON.stringify(obj),
       headers: {
@@ -78,20 +82,21 @@ function EventCard(props) {
     //only for show purposed
     // window.location.href = "/register";
   }
-  const options = {
-    reverse: true,
-    max: 15,
-    reset: true,
-    easing: "cubic-bezier(.03,.98,.52,.99)",
-    perspective: 1000,
-    scale: 1.06,
-  };
+  // const options = {
+  //   reverse: true,
+  //   max: 15,
+  //   reset: true,
+  //   easing: "cubic-bezier(.03,.98,.52,.99)",
+  //   perspective: 1000,
+  //   scale: 1.06,
+  // };
+
   return (
     <div className="card">
       <div className="card-div">
         <img src={props.img} alt="unicorn" className="card-img" />
         <h3>₹ {props.price}</h3>
-        {sessionStorage.getItem("isLoggedIn") == "true" && (
+        {sessionStorage.getItem("isLoggedIn") === "true" && (
           <button
             className="cart-btn"
             onClick={() => {
@@ -105,6 +110,7 @@ function EventCard(props) {
           >
             Add{" "}
             <img
+              alt="img"
               src={
                 process.env.REACT_APP_AWS_S3_URI + "/add-cartPURPLE_OLD_1.svg"
               }

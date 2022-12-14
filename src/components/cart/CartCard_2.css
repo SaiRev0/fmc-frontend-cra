@@ -25,12 +25,13 @@ body {
 
 .card-div h3 {
   position: absolute;
-  top: 20px;
+  top: 0px;
   color: #FCC907;
   left: 18px;
 }
 
 .card {
+  position: relative;
   margin-right: 50px;
   margin-top: 10px;
   max-width: 450px;
