@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const CardTitle = styled.h3`
   transform: translateZ(55px);
@@ -8,11 +8,12 @@ const CardTitle = styled.h3`
 function SponsorCard(props) {
   return (
     <div className="sponsor-card">
-      <div><a href={props.websiteLink} target="_blank">
-        <div className="sponsor_card_img">
-                    
-          <img src={props.img} alt="unicorn" className="sponsorcardImg"/>
-        </div></a>
+      <div>
+        <a href={props.websiteLink} rel="noreferrer" target="_blank">
+          <div className="sponsor_card_img">
+            <img src={props.img} alt="unicorn" className="sponsorcardImg" />
+          </div>
+        </a>
         <CardTitle className="cardTitle">{props.name}</CardTitle>
       </div>
 
